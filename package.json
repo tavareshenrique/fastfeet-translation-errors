@@ -1,0 +1,20 @@
+{
+  "name": "fastfeet-translation-errors",
+  "version": "1.0.0",
+  "description": "FastFeet Translation Errors is a package that translates the error messages from the API to pt-BR.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavareshenrique/fastfeet-translation-errors.git"
+  },
+  "keywords": ["fastfeet", "errors", "api", "messages", "translation", "translate"],
+  "author": "henriquetavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tavareshenrique/fastfeet-translation-errors/issues"
+  },
+  "homepage": "https://github.com/tavareshenrique/fastfeet-translation-errors#readme"
+}
