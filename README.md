@@ -31,36 +31,10 @@ yarn add fastfeet-translation-errors
 npm i fastfeet-translation-errors
 ```
 
-```js{4, 26}
-import { takeLatest, call, put, all } from 'redux-saga/effects';
-import { toast } from 'react-toastify';
-
+```js
 import { translateErrorMessages } from 'fastfeet-translation-errors';
 
-import history from '~/services/history';
-import api from '~/services/api';
-
-import { signInSuccess, signFailure } from './actions';
-
-export function* signIn({ payload }) {
-  try {
-    const { email, password } = payload;
-
-    const response = yield call(api.post, 'sessions', {
-      email,
-      password,
-    });
-
-    const { token, user } = response.data;
-
-    yield put(signInSuccess(token, user));
-
-    history.push('/orders');
-  } catch (err) {
-    toast.error(translateErrorMessages(err.response.data.error));
-    yield put(signFailure());
-  }
-}
+translateErrorMessages(err.response.data.error)
 ```
 
 # :computer: Author
